@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sand Museum</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(190, 141, 194);
+        }
+
+        header {
+            background-color: rgb(190, 141, 194);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            font-size: medium;
+            font-weight: 500;
+        }
+
+        .buttons {
+            text-align: right;
+    
+        }
+
+        button {
+            background-color: rgb(190, 141, 194);
+            color: white;
+            padding: 5px 10px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: medium;
+            font-weight: 400;
+        }
+
+        button:hover {
+            background-color: rgba(23, 23, 197, 0.144);
+            color: black;
+        }
+
+
+        .artifacts {
+            margin-top: 20px;
+        }
+
+        .artifact {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .artifact img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sand Museum of Mysuru</h1>
+    </header>
+
+    <div class="container">
+        <div class="buttons">
+            <button onclick="goBack()">Back</button>
+            <button onclick="goHome()">Home</button>
+           
+        </div>
+
+        <div class="artifacts">
+            <div class="artifact">
+                <img src="img\SM img\211116122sand-museum.jpg" alt="Artifact 1">
+                <h2>Dasara Jumbo Savari</h2>
+                <p>In Mysuru, India, the Vijayadashami Elephant procession during Mysuru
+                    Dasara is called Jumbo Savari.
+                </p>
+            </div>
+
+            <div class="artifact">
+                <img src="img\SM img\deb09f20d37323552ce41d6a93b3582b.jpg" alt="Artifact 2">
+                <h2>Happy man</h2>
+                <p>Happy man sculpture done using sand.
+                </p>
+            </div>
+
+            <div class="artifact">
+                <img src="img\SM img\Mysuru Sand Sculpture Museum (17).jpg" alt="Artifact 2">
+                <h2>Rakshasa</h2>
+                <p>Rakshasa face curving on the sand.
+                </p>
+            </div>
+
+            <div class="artifact">
+                <img src="img\SM img\Sand_museum_Mysore_sculpture.jpg" alt="Artifact 2">
+                <h2>Chamundeshwari</h2>
+                <p>Chamundeshwari idol curving on sand. 
+                </p>
+            </div>
+
+
+            <!-- Add more artifacts as needed -->
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function goHome() {
+            window.location.href = "index.php"; // Replace with your home page URL
+        }
+    </script>
+</body>
+</html>

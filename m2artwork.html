@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salar Jung Museum Art Work</title>
+<style>
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(19, 19, 83);                   
+    }
+              
+    header {
+        background-color: rgb(19, 19, 83);
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-item {
+        margin: 10px;
+        position: relative;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    .description {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .description {
+        opacity: 1;
+    }
+
+    .buttons {
+        text-align: right;
+        position: relative;
+    }
+                     
+    button {
+        background-color: rgba(23, 23, 197, 0.144);
+        color: black;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: medium;
+        font-weight: 400;
+    }
+
+    button:hover {
+        background-color: rgb(19, 19, 83);
+        color: white;
+    }
+
+    select {
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Art Work of Salar Jung Museum, Hyderabad</h1>
+    </header>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="goBack()">Back</button>
+            <button onclick="goHome()">Home</button>
+            <label for="category">Category:</label>
+            <select name="links" id="category" size="1" onchange="window.location.href=this.value">
+            <option value="m2artwork.html">Art Works</option>
+            <option value="m2marble.html">Marble Sculptures</option>
+            <option value="m2paintings.html">Paintings</option>
+            </select>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img\SJM img\a8.jpg" alt="Artifact 1">
+                <div class="description">
+                <h2>Throne of Tutankhamun</h2>
+                <p>It is made of wood and covered with gold and silver. It is ornamented with
+                    semi-precious stones and colored glass. The throne meant, not only the link justify-content-between
+                    the worlds of Gods and the people, but also majesty, stability, safety and balance.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="img\SJM img\a2.jpg" alt="Artifact maw1">
+                <div class="description">
+                    <h2>Ivory chair</h2>
+                    <p>The ivory chair was gifted to Tipu Sultan by King Louis XVI, 18th century, India.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\SJM img\a4.jpg" alt="Artifact maw2">
+                <div class="description">
+                    <h2>Huqqa botton</h2>
+                    <h3>Josiah Wedgwood and Sons</h3>
+                    <p>Wedgwood eearthern ware is generally decorated with a feieze of classical fifures in creamy 
+                        white using a background of blue, green and lavender. This Huqqa base in blue and white 
+                        depicting classical figures, trees and leaves was made especially for Salar Jung I when he 
+                        visited England in 1876.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\SJM img\a7.jpg" alt="Artifact maw3">
+                <div class="description">
+                    <h2>Antique Chinese ivory carving</h2>
+                    <p>The ivory carving ball has several smaller balls inside.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\SJM img\a1.jpg" alt="Artifact maw4">
+                <div class="description">   
+                    <h2>Parrot</h2>
+                    <p>The Parrot  is made and worked in gold, embellished with precious and semi-precious
+                    stones and coloured enamel. The Parrot, inlaid with green, red and colourless stones
+                    with an engraved and chiselled gold framework, is perched on a tree holding a flower
+                    bud with its beak.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\SJM img\a3.jpg" alt="Artifact maw5">
+                <div class="description">
+                    <h2>Jde Quran stand</h2>
+                    <p>Miniature stand in jade(rehal), dated 1209 - 1210 CE, inscribed with the name of Iltutmish, ruler
+                    of Delhi Sultan.</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    
+    function goHome() {
+        window.location.href = "index.php"; 
+   }
+    
+</script>
+
+</body>
+</html>

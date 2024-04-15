@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Museum Sculptures Gallery</title>
+<style>
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: wheat;                   
+    }
+              
+    header {
+        background-color: wheat;
+        color: brown;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-item {
+        margin: 10px;
+        position: relative;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+
+
+    .gallery-item:hover {
+        opacity: 1;
+    }
+
+    .buttons {
+        text-align: right;
+        position: relative;
+    }
+                     
+    button {
+        background-color: rgba(23, 23, 197, 0.144);
+        color: black;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: medium;
+        font-weight: 400;
+    }
+
+    button:hover {
+        background-color: wheat;
+        color: brown;
+        
+    }
+
+    select {
+        padding: 8px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Sculptures of Indian Museum, Kolkata</h1>
+    </header>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="goBack()">Back</button>
+            <button onclick="goHome()">Home</button>
+            <label for="category">Category:</label>
+            <select name="links" id="category" size="1" onchange="window.location.href=this.value">
+                <option value="m3bronze.html">Bronze Gallery</option>
+                <option value="m3sculptures.html">Sculptures</option>
+                <!-- Add more categories as needed -->
+            </select>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img\IM img\indian_museum5.jpg" alt="Artifact ma1">
+                <div>
+                    <h2>Life scenes of Buddha</h2>
+                    <p></p>Carved slab fragment from the ancient stupa in 
+                    Amaravati on the banks of River Krishna (2nd Century, Amaravati, 
+                    Andhra Pradesh, White Limestone)<p>
+                </div>
+            </div>
+
+                <div class="gallery-item">
+                    <img src="img\IM img\indian_museum10.jpg" alt="Artifact ma2">
+                    <div>
+                        <h2>Mahavira, the 24th and last Jain Tirthankara</h2>
+                        <p>11th Century, Karanbel Tewar, Madhya Pradesh, Sandstone.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img\IM img\indian_museum111.jpg" alt="Artifact ma3">
+                    <div>
+                        <h2>An intricate filigreed Venu Gopala</h2>
+                        <h3>12th Century, Halebidu, Karnataka, Granite</h3>
+                        <p>Indian settlement in South-East Asia and the subsequent export of Buddhism and Hinduism 
+                        saw a corresponding rife export of Indian architecture and sculpture. It is also perhaps
+                        a befitting end to the Indian Museum collection of a rich heritage, which went on to enrich 
+                        those it came into contact with.
+
+                        With the Garuda from Cambodia and a Chaturmukha Linga from Java staring at you in the eye in one 
+                        end of the gallery, and the Bharhut gateway towering at the other, 1,500 years of India's 
+                        sculptural art is traversed in one corridor. All in one afternoon. 
+                        Such is the wonder of wonderful museums.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img\IM img\indian_museum91.jpg" alt="Artifact ma4">
+                    <div>
+                        <h2>Surasundaris or Celestial Beauties</h2>
+                        <p>The dynamic movement in the representation of Surasundaris or Celestial Beauties 
+                        dominated the medieval art style in India, a pronounced departure from Gupta 
+                        Classicism. Left: Mother fondling child; 
+                        Right: Sardulavyala (10th Century, Khajuraho, Madhya Pradesh, Sandstone)</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img\IM img\indian_museum81.jpg" alt="Artifact ma5">
+                    <div>
+                        <h2>Post-Gupta Mahisasuramardini</h2>
+                        <h3>(12th Century, Manbhum, Bihar, Chlorite)</h3>
+                        <p>One of my favourite group of pieces in the gallery, and part of the post-Gupta works are the 
+                        Surasundaris or celestial beauties. A medieval art style characterised by three-quarter fine
+                        profiles and back views of figures twisting around an axis, they are also the most blatant 
+                        break from the Classical Gupta School, both in terms of content and style. The whole gamut 
+                        of mundane human life was narrated through myriad poses and expressions by the artists of 
+                        the Chandella kingdom in Madhya Pradesh and Odisha during this period.</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    
+    function goHome() {
+        window.location.href = "index.php"; 
+   }
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>National Museum Paintings Gallery</title>
+<style>
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(142, 46, 85);                
+    }
+              
+    header {
+        background-color: rgb(142, 46, 85);
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-item {
+        margin: 10px;
+        position: relative;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    .description {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .description {
+        opacity: 1;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    .buttons {
+        text-align: right;
+        position: relative;
+    }
+                     
+    button {
+        background-color: rgba(23, 23, 197, 0.144);
+        color: black;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: medium;
+        font-weight: 400;
+    }
+
+    button:hover {
+        background-color: rgb(142, 46, 85);
+        color: white;
+    }
+
+    select {
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <h1>Paintings Gallery of National Museum, New Delhi </h1>
+    </header>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="goBack()">Back</button>
+            <button onclick="goHome()">Home</button>
+            <label for="category">Category:</label>
+                <select name="links" id="category" size="1" onchange="window.location.href=this.value">
+                    <option value="m1bronze.html">Bronze Gallery</option>
+                    <option value="m1paintings.html">Paintings</option>
+                    <option value="m1sculptures.html">Sculptures</option>
+                </select>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img\NM img\Chand_Bibi_playing_Polo_-_Google_Art_Project.jpg" alt="Artifact m1">
+                <div class="description">
+                    <h2>Chand Bibi playing Polo</h2>
+                    <p>Chand Bibi is among a small group of historic Indian women
+                    who took on powerful men. Paintings such as this provide clues to the liberal life-style of
+                    the Deccan</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img\NM img\radha krishna.jpg" alt="Artifact m2">
+                <div class="description">
+                    <h2>Radha and Krishna</h2>
+                    <p>Radha and Krishna in the boat of love by Nihal Chand</p>
+                </div>
+            </div>
+       
+            <div class="gallery-item">
+                <img src="img\NM img\krishna.jpg" alt="Artifact m3">
+                <div class="description">
+                    <h2>Prithviraj</h2>
+                    <p>Prithviraj and Krishna</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\NM img\Ragini_Todi_-_Google_Art_Project.jpg" alt="Artifact m4">
+                <div class="description">
+                    <h2>The jogi as seasonal hermit</h2>
+                    <p>A painting of jogi as seasonal hermit by Ragini Todi</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\NM img\muni.jpg" alt="Artifact m5">
+                <div class="description">
+                    <h2>Bharata comes to meet Rama at Chitrakuta</h2>
+                    <p>This painting depicts the scene of the meeting between the two brothers at Chtrakuta.
+                        It is unique because it depicts two highly emotional scenes in one painting.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    
+    function goHome() {
+        window.location.href = "index.php"; 
+   }
+    
+</script>
+
+</body>
+</html>

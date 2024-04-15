@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salar Jung Museum Marble Sculptures</title>
+<style>
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(57, 149, 174);                   
+    }
+              
+    header {
+        background-color: rgb(57, 149, 174);
+        color: black;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-item {
+        margin: 10px;
+        position: relative;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    .description {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .description {
+        opacity: 1;
+    }
+
+    .buttons {
+        text-align: right;
+        position: relative;
+    }
+                     
+    button {
+        background-color: rgba(23, 23, 197, 0.144);
+        color: black;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: medium;
+        font-weight: 400;
+    }
+
+    button:hover {
+        background-color: rgb(57, 149, 174);
+        color: black;
+    }
+
+    select {
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Paintings of Salar Jung Museum, Hyderabad </h1>
+    </header>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="goBack()">Back</button>
+            <button onclick="goHome()">Home</button>
+            <label for="category">Category:</label>
+            <select name="links" id="category" size="1" onchange="window.location.href=this.value">
+            <option value="m2artwork.html">Art Works</option>
+            <option value="m2marble.html">Marble Sculptures</option>
+            <option value="m2paintings.html">Paintings</option>
+            </select>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img\SJM img\p1.jpg" alt="Artifact m21">
+                <div class="description">
+                    <h2>The Spell of Music</h2>
+                    <p>The Spell of Music painting by Abdur Rahman Chughtai</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\SJM img\p2.jpg" alt="Artifact m22">
+                <div class="description">
+                    <h2>Silent Conversation</h2>
+                    <p>Contemporary painting representing silent conversation by K S Kulkarni</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\SJM img\p3.jpg" alt="Artifact m23">
+                <div class="description">
+                    <h2>Cow and calf</h2>
+                    <p>Painting of cow and calf by Narayan Shridhar Bendre</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\SJM img\p4.jpg" alt="Artifact m24">
+                <div class="description">
+                    <h2>Vasant</h2>
+                    <p>Vasant work of art by Nandalal Bose</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\SJM img\p6.jpg" alt="Artifact m25">
+                <div class="description">
+                    <h2>Stolen Interview</h2>
+                    <p>This painting on canvas by Raja Ravi Varma, represents lovers standing beside a pillar.
+                    The women holds a rose and plucks petals while the man rests the cheek on his left hand 
+                    anxiously looking towards her.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    
+    function goHome() {
+        window.location.href = "index.php"; 
+   }
+    
+</script>
+
+</body>
+</html>

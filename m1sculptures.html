@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>National Museum Sculptures Gallery</title>
+<style>
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(165, 164, 98);                   
+    }
+              
+    header {
+        background-color: rgb(165, 164, 98);
+        color: black;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-item {
+        margin: 10px;
+        position: relative;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    .description {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .description {
+        opacity: 1;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    .buttons {
+        text-align: right;
+        position: relative;
+    }
+                     
+    button {
+        background-color: rgba(23, 23, 197, 0.144);
+        color: black;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: medium;
+        font-weight: 400;
+    }
+
+    button:hover {
+        background-color: rgb(165, 164, 98);
+        color: black;
+
+    }
+
+    select {
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <h1>Sculptures Gallery of National Museum, New Delhi </h1>
+    </header>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="goBack()">Back</button>
+            <button onclick="goHome()">Home</button>
+            <label for="category">Category:</label>
+                <select name="links" id="category" size="1" onchange="window.location.href=this.value">
+                    <option value="m1bronze.html">Bronze Gallery</option>
+                    <option value="m1paintings.html">Paintings</option>
+                    <option value="m1sculptures.html">Sculptures</option>
+                </select>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img\NM img\IMG_20240312_185951.jpg" alt="Artifact ms1">
+                <div class="description">
+                    <h2>Vishnu</h2>
+                    <h3>Gupta - 5th Century A.D. -Mathura, Uttar Pradesh</h3>
+                    <p>This impressive Vishnu depicts the deity as four-armed, wearing a jeweled crown, 
+                    sacred thread, and a long garland made of flowers. The sculptor has depicted two necklaces, 
+                    one of twisted pearl strands and the other of graduated beads. When complete, this image probably 
+                    had a large halo and unfortunately the lower arms and legs are now also missing. 
+                    This is widely considered the finest Hindu sculpture of the Gupta period from Mathura.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\NM img\IMG_20240312_190016.jpg" alt="Artifact ms2">
+                <div class="description">
+                    <h2>Ganga</h2>
+                    <h3>Gupta - 5th Century A.D. - Ahichchhatra, Uttar Pradesh</h3>
+                    <p>From the Gupta period onwards the two sacred rivers of North India, the Ganga and
+                    Yamuna, are often presented as river goddesses flanking the entrance to many Hindu Temples. 
+                    Symbolising fertility, abundance and untamed energy, Ganga is represented here as a bejewelled 
+                    and beautiful young Goddess, standing on her aquatic vehicle (makara, or crocodile). 
+                    Standing at a height of 1.7m, this is one of a pair of 
+                    Ganga sculptures excavated from the remains of a large brick temple at Ahichchhatra.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\NM img\IMG_20240312_190039.jpg" alt="Artifact ms3">
+                <div class="description">
+                    <h2>Rama redeeming Ahiya</h2>
+                    <p>Gupta - 5th Century A.D. - Deogarh, Uttar Pradesh</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\NM img\IMG_20240312_190055.jpg" alt="Artifact ms4">
+                <div class="description">
+                    <h2>Siddhaikavira (a form of Manjusri)</h2>
+                    <h3>Pala - 8th Century A.D. - Nalanda, Bihar</h3>
+                    <p>Freestanding stone images, mostly Bodhisattvas and usually slender and elegant,
+                    do not appear until the early Pala period at the end of the 8th century. They are 
+                    in a buff sandstone until the beginning of the 9th century,
+                    after which images of dark grey and black schists from further east start to take over.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img\NM img\IMG_20240312_190113.jpg" alt="Artifact ms5">
+                <div>
+                    <h2>Vishnu</h2>
+                    <p>Pala - 11th Century A.D. - Eastern India</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    
+    function goHome() {
+        window.location.href = "index.php"; 
+   }
+    
+</script>
+
+</body>
+</html>

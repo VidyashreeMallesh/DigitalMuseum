@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Admin Login Page</title>
+  </head>
+  <body>
+    <div class="login-container">
+    <h1>Admin Login</h1>
+  <form action="admin_login.php" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Login</button><br>
+    
+  </form>
+    </div>
+  </body>
+</html>
+
+<style>
+    body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 6px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  button {
+    padding: 10px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  button:hover {
+    background-color: rgb(49, 46, 46);
+    color: white;
+    cursor: pointer;
+  }
+  
+  </style>

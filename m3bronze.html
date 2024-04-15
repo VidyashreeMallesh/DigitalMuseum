@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Indian Museum Bronze artifacts</title>
+    </head>
+    <body>
+        <header>
+            <h1>Bronze Artifacts of Indian Museum, Kolkata </h1>
+        </header>
+
+        <div class="container">
+            <div class="buttons">
+                <button onclick="goBack()">Back</button>
+                <button onclick="goHome()">Home</button>
+                <label for="category">Category:</label>
+            <select name="links" id="category" size="1" onchange="window.location.href=this.value">
+                <option value="m3bronze.html">Bronze Gallery</option>
+                <option value="m3sculptures.html">Sculptures</option>
+                <!-- Add more categories as needed -->
+            </select>
+            </div>
+            <div class="artifacts">
+                    <div class="artifact">
+                    <img src="img\IM img\1442268867.jpg" alt="Artifact m31">
+                    <h2>Bronze Buddha</h2>
+                    </div>
+
+                    <div class="artifact">
+                        <img src="img\IM img\2845603778.jpg" alt="Artifact m32">
+                        <h2>Vishnu</h2>
+                        <p>Seven inches Garuda kneeling with Vishnu, Shridevi and Bhudevi.</p>
+                    </div>
+
+                    <div class="artifact">
+                        <img src="img\IM img\3431639655.jpg" alt="Artifact m33">
+                        <h2>Marichi</h2>
+                        <p>Marichi is a Himalayan Buddhist Art</p>
+                    </div>
+
+                    <div class="artifact">
+                        <img src="img\IM img\3808723155.jpg" alt="Artifact m34">
+                        <h2>Nataraja</h2>
+                        <p>Shiva as the Lord of Dance.</p>
+                    </div>
+
+                    <div class="artifact">
+                        <img src="img\IM img\236212490.jpg" alt="Artifact m35">
+                        <h2>Vajratara</h2>
+                        <p>This photo exposes Buddhist iconography in the form of sculptures found throughout Asian
+                            countries such as Nepal and China.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+    
+            function goHome() {
+                window.location.href = "index.php"; // Replace with your home page URL
+            }
+        </script>
+            
+    </body>
+</html>
+
+<style>
+    
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(110, 114, 112);
+    }
+
+    header {
+        background-color: rgb(110, 114, 112);
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      font-size: medium;
+      font-weight: 500;
+  }
+
+  .buttons {
+      text-align: right;
+      position: relative;
+
+  }
+
+button {
+    background-color:  rgba(23, 23, 197, 0.144);
+    color: black;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 400;
+}
+
+button:hover {
+    background-color: rgb(110, 114, 112);
+    color: white;
+}
+
+select {
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+
+
+    .artifacts {
+        margin-top: 20px;
+    }
+
+    .artifact {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .artifact img {
+        position: center;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+</style>

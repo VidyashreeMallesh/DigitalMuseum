@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salar Jung Museum Marble Sculptures</title>
+<style>
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: wheat;                   
+    }
+              
+    header {
+        background-color: wheat;
+        color: black;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-item {
+        margin: 10px;
+        position: relative;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    .description {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .description {
+        opacity: 1;
+    }
+
+    .buttons {
+        text-align: right;
+        position: relative;
+    }
+                     
+    button {
+        background-color: rgba(23, 23, 197, 0.144);
+        color: black;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: medium;
+        font-weight: 400;
+    }
+
+    button:hover {
+        background-color: wheat;
+        color: black;
+    }
+
+    select {
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Marble Sculptures of Salar Jung Museum, Hyderabad </h1>
+    </header>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="goBack()">Back</button>
+            <button onclick="goHome()">Home</button>
+            <label for="category">Category:</label>
+            <select name="links" id="category" size="1" onchange="window.location.href=this.value">
+            <option value="m2artwork.html">Art Works</option>
+            <option value="m2marble.html">Marble Sculptures</option>
+            <option value="m2paintings.html">Paintings</option>
+            </select>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img\SJM img\3.jpg" alt="Artifact mm1">
+                    <div class="description">
+                        <h2>First Cradle marble sculpture</h2>
+                    </div>
+            </div>
+
+                <div class="gallery-item">
+                    <img src="img\SJM img\4.jpg" alt="Artifact mm2">
+                    <div class="description">
+                        <h2>Johann Gottfried Schadow marble sculpture</h2>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img\SJM img\1.jpg" alt="Artifact mm3">
+                    <div class="description">
+                        <h2>Baby sleeping on the bed</h2>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img\SJM img\6.jpg"alt="Artifact 2">
+                    <div class="description">
+                        <h2>A white woman statue</h2>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img\SJM img\2.jpg" alt="Artifact mm4">
+                    <div class="description">
+                        <h2>Leda and the Swan</h2>
+                    </div>
+                </div>            
+        </div>
+    </div>
+
+
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    
+    function goHome() {
+        window.location.href = "index.php"; 
+   }
+    
+</script>
+
+</body>
+</html>
